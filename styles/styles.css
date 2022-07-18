@@ -934,7 +934,22 @@ body {
   line-height: 30px;
 }
 
-.newsletter-form-text {}
+.newsletter-form-text {
+  position: relative;
+  padding-left: 32px;
+}
+
+.newsletter-form-text::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 25%;
+  left: 0;
+  background-image: url("../images/icon/mark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .page-footer {
   padding: 62px 0;
