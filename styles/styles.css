@@ -156,6 +156,36 @@ body {
   background-color: #000000;
 }
 
+.slider-controls-button {
+  position: relative;
+  width: 20px;
+  height: 60px;
+}
+
+.slider-controls-button::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 2px;
+  height: 25px;
+  background-color: #000000;
+  transform: rotate(28deg);
+}
+
+.slider-controls-button::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 2px;
+  height: 25px;
+  background-color: #000000;
+  transform: rotate(333deg);
+}
+
+.slider-controls-next {
+  transform: rotate(180deg);
+}
+
 .info-link-active {}
 
 .delivery-button {
@@ -181,6 +211,9 @@ body {
   width: 125px;
   height: 100px;
   background-color: #ffe17f;
+  background-image: url("../images/icon/delivery-car.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .delivery-button::after {
@@ -191,6 +224,9 @@ body {
   width: 125px;
   height: 100px;
   background-color: #f0f0f0;
+  background-image: url("../images/icon/delivery-info.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .subscribe {
@@ -455,7 +491,9 @@ body {
   margin-right: 40px;
 }
 
-.slider-item-focused {}
+.slider-item-focused {
+  position: relative;
+}
 
 .slider-item {
   display: none;
@@ -463,7 +501,13 @@ body {
 
 .slider-item-wrapper {}
 
-.slider-controls {}
+.slider-controls {
+  position: absolute;
+  display: flex;
+  top: 35%;
+  width: 100%;
+  justify-content: space-between;
+}
 
 .gallery-content {
   z-index: 1;
@@ -641,14 +685,52 @@ body {
 .info-item .info-link-active {
   background-color: #000000;
   text-align: left;
+  color: #ffc700;
 }
 
 .info-title {
   margin: 0;
+  color: inherit;
 }
 
 .info-discription {
   display: none;
+}
+
+.info-discription-delivery,
+.info-discription-guarantee,
+.info-discription-credit {
+  position: relative;
+}
+
+.info-discription-delivery::before,
+.info-discription-guarantee::before,
+.info-discription-credit::before {
+  content: "";
+  position: absolute;
+  top: 77px;
+  right: -110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.info-discription-delivery::before {
+  width: 136px;
+  height: 134px;
+  background-image: url("../images/info/delivery.png");
+}
+
+.info-discription-guarantee::before {
+  width: 171px;
+  height: 195px;
+  background-image: url("../images/info/guarantee.png");
+}
+
+.info-discription-credit::before {
+  width: 102px;
+  height: 132px;
+  background-image: url("../images/info/credit.png");
 }
 
 .info-discription-active {
@@ -669,6 +751,7 @@ body {
 }
 
 .info-discription-text {
+  max-width: 475px;
   margin: 0;
 }
 
