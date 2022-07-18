@@ -435,6 +435,7 @@ body {
 
 .header-catalog-info {
   display: flex;
+  z-index: 2;
 }
 
 .header-catalog-list,
@@ -462,15 +463,18 @@ body {
 .subcatalog {
   display: flex;
   position: absolute;
-  border-color: #ffe17f;
-  top: 50px;
+  background-color: #ffe17f;
+  left: -60px;
   list-style: none;
   margin: 0;
   padding: 0;
-  z-index: 1;
+  padding-top: 33px;
+  padding-bottom: 26px;
+  padding-left: 60px;
+  width: 1160px;
 }
 
-.subcatalog-item:first-child{
+.subcatalog-item:first-child {
   margin-right: 30px;
 }
 
@@ -492,7 +496,7 @@ body {
   letter-spacing: 0;
 }
 
-.subcatalog-link:not(:last-child){
+.subcatalog-link:not(:last-child) {
   margin-bottom: 20px;
 }
 
