@@ -939,7 +939,7 @@ body {
   padding-left: 32px;
 }
 
-.newsletter-form-text::before{
+.newsletter-form-text::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -1003,6 +1003,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 62px;
 }
 
 .information-item:not(:last-child) {
@@ -1026,11 +1027,22 @@ body {
 
 .social-footer {}
 
-.social-list {}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-.social-item {}
+.social-item:not(:last-child){
+  margin-right: 15px;
+}
 
-.social-link {}
+.social-link {
+  color: #444444;
+}
 
 .footer-telephone {
   display: flex;
