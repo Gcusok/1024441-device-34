@@ -25,7 +25,7 @@
         <nav class="navigation">
           <ul class="navigation-list navigation-list-user">
             <li class="navigtion-item navigation-login">
-              <a href="#" class="navigation-link">Коля Петухов</a>
+              <a href="#" class="navigation-link navigation-link-login">Коля Петухов</a>
             </li>
             <li class="navigtion-item">
               <button class="button button-exit">Выйти</button>
@@ -33,11 +33,12 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigtion-item">
-              <a href="#" class="navigation-link">Сравнить</a>
+              <a href="#" class="navigation-link navigtion-link-compare">Сравнить</a>
             </li>
-            <li class="navigtion-item">
-              <a href="#" class="navigation-link">Корзина</a>
-              <span class="basket-counter">2</span>
+            <li class="navigtion-item navigtion-item-basket">
+              <a href="#" class="navigation-link navigation-link-basket">
+                <span class="basket-counter">2</span>
+                Корзина</a>
             </li>
           </ul>
         </nav>
@@ -48,8 +49,8 @@
           <li class="header-catalog-item">
             <a class="header-info-link" href="#">Каталог товаров</a>
           </li>
-          <li class="header-catalog-item">
-            <a href="#" class="button"></a>
+          <li class="header-catalog-item header-catalog-item-button">
+            <a href="#" class="button header-catalog-list-button"></a>
           </li>
         </ul>
         <ul class="header-info-list">
@@ -114,11 +115,11 @@
                 </div>
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-range">
-                     от
+                    от
                     <input class="range-input" type="number" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-range">
-                     до
+                    до
                     <input class="range-input" type="number" value="5000" name="max-price">
                   </label>
                 </div>
@@ -209,10 +210,10 @@
                   </select>
                 </div>
                 <div class="sort-button-wrapper">
-                  <button class="button sort-button" type="button">
+                  <button class="button sort-button sort-button-up" type="button">
                     <span class="visually-hidden">Вверх</span>
                   </button>
-                  <button class="button sort-button" type="button">
+                  <button class="button sort-button sort-button-down" type="button">
                     <span class="visually-hidden">Вниз</span>
                   </button>
                 </div>
@@ -234,7 +235,7 @@
                   </a>
                   <a href="#" class="button  regular-button">Подробнее</a>
                 </li>
-                <li class="product-card">
+                <li class="product-card product-card-new">
                   <div class="product-card-wrapper">
                     <a href="#" class="product-card-link">
                       <h3 class="product-card-title">Профессиональная селфи-палка</h3>
