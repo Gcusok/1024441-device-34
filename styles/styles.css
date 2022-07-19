@@ -308,6 +308,26 @@ body {
   background-color: #f0f0f0;
 }
 
+.button-less{
+  background-image: url("../images/icon/minus.png");
+  background-repeat: no-repeat;
+}
+
+.button-more {
+  background-image: url("../images/icon/plus.png");
+  background-repeat: no-repeat;
+}
+
+.close-button{
+  position: absolute;
+  top: 74px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/icon/icon-cross.png");
+  background-repeat: no-repeat;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
@@ -429,10 +449,7 @@ body {
 }
 
 .popover {
-
   position: absolute;
-
-
 }
 
 .popover::before {
@@ -1547,7 +1564,9 @@ body {
   ;
 }
 
-.modal-container-close {}
+.modal-container-close {
+  display: none;
+}
 
 .modal {
   position: relative;
@@ -1641,7 +1660,9 @@ body {
 
 .field-title {}
 
-.form-labele-icone {}
+.form-labele-icone {
+  position: relative;
+}
 
 .tooltip {
   position: absolute;
