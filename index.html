@@ -38,6 +38,34 @@
               <a href="#" class="navigation-link navigation-link-basket">
                 <span class="basket-counter">2</span>
                 Корзина</a>
+              <div class="popover popover-basket">
+                <h2 class="visually-hidden">Корзина</h2>
+                <form action="https://echo.htmlacademy.ru/" method="post" class="popover-basket-form">
+                  <ol class="basket-list">
+                    <li class="basket-item">
+                      <div class="basket-img-wrapper">
+                        <img class="basket-image" width="39" height="43" src="images/product-card/selfie-regular.jpg"
+                          alt="Любительская селфи-палка.">
+                      </div>
+                      <p class="basket-description">Любительская селфи-палка</p>
+                      <button class="button button-close-basket" type="button"></button>
+                    </li>
+                    <li class="basket-item">
+                      <div class="basket-img-wrapper">
+                        <img class="basket-image" width="39" height="43" src="images/product-card/selfie-regular.jpg"
+                          alt="Любительская селфи-палка.">
+                      </div>
+                      <p class="basket-description">Любительская селфи-палка</p>
+                      <button class="button button-close-basket" type="button"></button>
+                    </li>
+                  </ol>
+                  <div class="basket-total">
+                    <p class="basket-total-product-count">Товаров: 2</p>
+                    <p class="basket-total-product-price">Сумма: 2000 ₽</p>
+                  </div>
+                  <a href="#" class="button open-basket">Открыть корзину</a>
+                </form>
+              </div>
             </li>
           </ul>
         </nav>
@@ -45,8 +73,8 @@
       <div class="header-catalog-info">
         <h2 class="visually-hidden">Подменю</h2>
         <ul class="header-catalog-list">
-          <li class="header-catalog-item">
-            <a class="header-info-link" href="catalog.html">
+          <li class="header-catalog-item header-subcatalog-item">
+            <a class="header-info-link subcatalog-info-link" href="catalog.html">
               <h3 class="header-catalog-title">Каталог товаров</h3>
             </a>
             <ul class="subcatalog">
@@ -130,26 +158,21 @@
               </p>
               <a href="#" class="button regular-button">Подробнее</a>
               <div class="gallery-feature">
-                <div class="gallery-feature-item">
-                  <ul class="gallery-feature-list">
-                    <li class="gallery-feature-value">
-                      <p>800 м</p>
-                    </li>
-                    <li class="gallery-feature-text">
-                      <p>Дальность полета</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="gallery-feature-item">
-                  <ul class="gallery-feature-list">
-                    <li class="gallery-feature-value">
-                      <p>50 м</p>
-                    </li>
-                    <li class="gallery-feature-text">
-                      <p>Радиус поражения</p>
-                    </li>
-                  </ul>
-                </div>
+                <h2 class="visually-hidden">Характеристика</h2>
+                <dl class="gallery-feature-list">
+                  <div class="gallery-feature-item">
+                    <dt class="gallery-feature-value">
+                      800 м
+                    </dt>
+                    <dd class="gallery-feature-description">Дальность полета</dd>
+                  </div>
+                  <div class="gallery-feature-item">
+                    <dt class="gallery-feature-value">
+                      50 м
+                    </dt>
+                    <dd class="gallery-feature-description">Радиус поражения</dd>
+                  </div>
+                </dl>
               </div>
             </section>
             <section class="gallery-discription">
