@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header class="page-header page-header-catalog container">
+    <header class="page-header container">
       <h1 class="visually-hidden">device</h1>
       <a href="index.html" class="page-header-logo">
         <div class="header-logo-wrapper">
@@ -24,21 +24,49 @@
         </form>
         <nav class="navigation">
           <ul class="navigation-list navigation-list-user">
-            <li class="navigtion-item navigation-login">
-              <a href="#" class="navigation-link navigation-link-login">Коля Петухов</a>
-            </li>
             <li class="navigtion-item">
+              <a href="#" class="navigation-link navigation-link-login">Войти</a>
+            </li>
+            <li class="navigtion-item visually-hidden">
               <button class="button button-exit">Выйти</button>
             </li>
           </ul>
           <ul class="navigation-list">
-            <li class="navigtion-item">
+            <li class="navigtion-item navigtion-item-compare">
               <a href="#" class="navigation-link navigtion-link-compare">Сравнить</a>
             </li>
             <li class="navigtion-item navigtion-item-basket">
               <a href="#" class="navigation-link navigation-link-basket">
                 <span class="basket-counter">2</span>
                 Корзина</a>
+              <div class="popover popover-basket">
+                <h2 class="visually-hidden">Корзина</h2>
+                <form action="https://echo.htmlacademy.ru/" method="post" class="popover-basket-form">
+                  <ol class="basket-list">
+                    <li class="basket-item">
+                      <div class="basket-img-wrapper">
+                        <img class="basket-image" width="39" height="43" src="images/product-card/selfie-regular.jpg"
+                          alt="Любительская селфи-палка.">
+                      </div>
+                      <p class="basket-description">Любительская селфи-палка</p>
+                      <button class="button button-close-basket" type="button"></button>
+                    </li>
+                    <li class="basket-item">
+                      <div class="basket-img-wrapper">
+                        <img class="basket-image" width="39" height="43" src="images/product-card/selfie-regular.jpg"
+                          alt="Любительская селфи-палка.">
+                      </div>
+                      <p class="basket-description">Любительская селфи-палка</p>
+                      <button class="button button-close-basket" type="button"></button>
+                    </li>
+                  </ol>
+                  <div class="basket-total">
+                    <p class="basket-total-product-count">Товаров: 2</p>
+                    <p class="basket-total-product-price">Сумма: 2000 ₽</p>
+                  </div>
+                  <a href="#" class="button open-basket">Открыть корзину</a>
+                </form>
+              </div>
             </li>
           </ul>
         </nav>
@@ -47,7 +75,7 @@
         <h2 class="visually-hidden">Подменю</h2>
         <ul class="header-catalog-list">
           <li class="header-catalog-item header-subcatalog-item">
-            <a class="header-info-link subcatalog-info-link" href="#">
+            <a class="header-info-link subcatalog-info-link" href="catalog.html">
               <h3 class="header-catalog-title">Каталог товаров</h3>
             </a>
             <ul class="subcatalog">
